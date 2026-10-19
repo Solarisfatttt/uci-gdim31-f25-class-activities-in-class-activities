@@ -1,8 +1,10 @@
 # in-class-activities
 ## Devlogs
 ### W1
-//Hello World! (I was in waitlist so I'll do this one later dont grade it pls)
-
+Hello World!
+1. The game does not provide a visualized screen because there is no camera detected.
+2. 
+https://solar-zhou.itch.io/gdim-w1-activity
 ### W2
 1. There is a step to divide the sum by 3, and we cannot make sure the result is an integer, making the number float helps with getting a more precise average number.
 2. _bounce is integer because it is a count of number of bounces and this number increases by 1 each time which makes all result integer.
