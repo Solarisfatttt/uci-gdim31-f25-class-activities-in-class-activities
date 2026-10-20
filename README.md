@@ -12,7 +12,7 @@ https://solar-zhou.itch.io/gdim-w1-activity
 
 ### W3
 //I am pretty sure I did all the work but idk why it disappeared when I checked it today, same with W1 work that I missed, I'm doing it again and hope it will save.
-1.Table //(I forget it it was 7 days ago)
+1.Table 11
           1. Parameter: (float friendShipLevel, bool isKnowSecret), Return String.
           2. Parameter: (float targetLightLevel), Return void.
           3. Parameter: (float hitTime), Return bool
