@@ -20,7 +20,8 @@ https://solar-zhou.itch.io/gdim-w1-activity
 Member variables are its traits, like blade length and color. Methods are its actions, like cutting and retracting the blade.
 
 ### W4
-
+1. We added rigid body to the cat and soccerBall objects, and isTrigger is on for the goal object. This is because we need the interaction between the ball and cat to make it kick, and the goal should not move so it is not rigid body. Then we found Is Trigger makes the object passable, which we need it for the goal.
+2. The first time, I found that my ball falls down into void, and then I found that the goal is not passable, then I understand how Is Trigger works and that I made it in the wrong way.
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
