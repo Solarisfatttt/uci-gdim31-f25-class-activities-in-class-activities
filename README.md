@@ -18,6 +18,9 @@ https://solar-zhou.itch.io/gdim-w1-activity
           3. Parameter: (float hitTime), Return bool
 2. A class is like a utility knife blueprint, and a Component is an actual utility knife. 
 Member variables are its traits, like blade length and color. Methods are its actions, like cutting and retracting the blade.
+
+### W4
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
