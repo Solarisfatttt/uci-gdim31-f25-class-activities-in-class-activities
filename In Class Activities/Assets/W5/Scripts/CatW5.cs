@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class CatW5 : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class CatW5 : MonoBehaviour
     [SerializeField] private Animator _animator;
 
     private string _isWalkingName = "IsWalking";
-
+    private Vector3 translation = new Vector3(0.0f, 0.0f, 0.0f);
     private void Update()
     {
         // STEP 1 & 2 ---------------------------------------------------------
@@ -43,13 +44,32 @@ public class CatW5 : MonoBehaviour
         //
         // MULTIPLY one of your vectors with a certain value to do this. >:)
 
-        Vector3 translation = Vector3.zero;
+
         
+        float control = 1.0f;
+        if (_flipWSControls)
+        {
+            control = -1.0f;
+        }
+        if (Input.GetKey(KeyCode.W))
+        {
+            translation = new Vector3(0.0f, 0.0f, _moveSpeed * Time.deltaTime * control);
+            transform.Translate(translation);
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            translation = new Vector3(0.0f, 0.0f, -1 * _moveSpeed * Time.deltaTime * control);
+            transform.Translate(translation);
+        }
+        else
+        {
+            Vector3 translation = new Vector3(0.0f, 0.0f, 0.0f);
+        }
 
 
-        // STEP 1 & 2 ---------------------------------------------------------
+            // STEP 1 & 2 ---------------------------------------------------------
 
-        float rotation = Input.GetAxis("Horizontal") * _turnSpeed * Time.deltaTime;
+            float rotation = Input.GetAxis("Horizontal") * _turnSpeed * Time.deltaTime;
         transform.Rotate(0, rotation, 0);
 
         if (translation.magnitude != 0.0f || rotation != 0.0f)
