@@ -22,6 +22,16 @@ Member variables are its traits, like blade length and color. Methods are its ac
 ### W4
 1. We added rigid body to the cat and soccerBall objects, and isTrigger is on for the goal object. This is because we need the interaction between the ball and cat to make it kick, and the goal should not move so it is not rigid body. Then we found Is Trigger makes the object passable, which we need it for the goal.
 2. The first time, I found that my ball falls down into void, and then I found that the goal is not passable, then I understand how Is Trigger works and that I made it in the wrong way.
+### W5
+### W6
+1. 
+ Just following the instruction, that add Deer W5 as component of deer.
+   turnable Inspector means [SerializeField] a variable, and the variable is a transform. We use [SerializeField] private transform ???.
+   Using GetComponent<> to get NavMeshAgent, so we write NavMeshAgent agent = GetComponent<NavMeshAgent>
+   It says use NavMeshAgent when game begins, so we put this NavMeshAgent in private void Start()
+   telling deer where to walk: we set the Transform target as mushroom in the inspector, and use SetDestination method to tell deer walk to the target, also in the Start()
+  
+   
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
