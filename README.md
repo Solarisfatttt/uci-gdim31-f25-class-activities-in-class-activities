@@ -31,7 +31,21 @@ Member variables are its traits, like blade length and color. Methods are its ac
    It says use NavMeshAgent when game begins, so we put this NavMeshAgent in private void Start()
    telling deer where to walk: we set the Transform target as mushroom in the inspector, and use SetDestination method to tell deer walk to the target, also in the Start()
   
-   
+### W7
+1. I am assigned on Math part, mainly
+https://docs.google.com/document/d/1iBZihNlx92b16mfK2TXGr1CYtdDQOOh7vAeKN-P9YfU/edit?tab=t.0
+
+2.
+Simple Notes:
+          Function required:   tunable variable in Inspector ---- Serialized a float variable
+                               Attached to all Bat GameObjects ---- add to all bats, or I can add it to the folder of all bats?
+                                2 Methods of start and stop chasing ---- public void methods. I can use Vector3 or Navmesh to chase cat. But it is a 2d game, maybe I'll need to use vector3.
+                                To check if a method is called, the Update() method is required. I need a isChasing boolean variable to decide if chasing cat.
+                                A transform is required for chasing.
+
+
+
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
