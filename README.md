@@ -42,7 +42,8 @@ Simple Notes:
                                 2 Methods of start and stop chasing ---- public void methods. I can use Vector3 or Navmesh to chase cat. But it is a 2d game, maybe I'll need to use vector3.
                                 To check if a method is called, the Update() method is required. I need a isChasing boolean variable to decide if chasing cat.
                                 A transform is required for chasing.
-
+### W8
+Step2: I changed Vector.forward into transform.forward, this is because Vector.forward is set in a Global space that is always to the front relative to the world, and transform.forward will always stick with the perspective of the Muskrat and rotates with it's rotation.
 
 
 
