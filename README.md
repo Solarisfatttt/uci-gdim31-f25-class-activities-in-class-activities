@@ -48,6 +48,13 @@ Step2: I changed Vector.forward into transform.forward, this is because Vector.f
 ### W9
 Link to drawing: https://docs.google.com/drawings/d/1rKWK0YFek2NvgOzxyGL1tudAk9h0U6wmktSe9YNntpU/edit
 
+What I've done:
+- Set up 2 tilemap, one called platform and one called ground.
+- Create platform layer and background layer
+- Use tile palette to draw platforms and background to the map, that are on different layers.
+- Draw the map, add obstacles in platform layer.
+- Trying to create some items(unfinished)
+- 
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
