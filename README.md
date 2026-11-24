@@ -45,7 +45,8 @@ Simple Notes:
 ### W8
 Step2: I changed Vector.forward into transform.forward, this is because Vector.forward is set in a Global space that is always to the front relative to the world, and transform.forward will always stick with the perspective of the Muskrat and rotates with it's rotation.
 
-
+### W9
+Link to drawing: https://docs.google.com/drawings/d/1rKWK0YFek2NvgOzxyGL1tudAk9h0U6wmktSe9YNntpU/edit
 
 ## Open-Source Assets
 ### W1
